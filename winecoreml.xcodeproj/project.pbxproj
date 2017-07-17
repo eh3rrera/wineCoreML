@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E49EDAD41F1C65B400660970 /* wine.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E49EDAD31F1C65B200660970 /* wine.mlmodel */; };
 		E4C2329B1F1A6C97006B91DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C2329A1F1A6C97006B91DF /* AppDelegate.swift */; };
 		E4C2329D1F1A6C97006B91DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C2329C1F1A6C97006B91DF /* ViewController.swift */; };
 		E4C232A01F1A6C97006B91DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4C2329E1F1A6C97006B91DF /* Main.storyboard */; };
 		E4C232A21F1A6C97006B91DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4C232A11F1A6C97006B91DF /* Assets.xcassets */; };
 		E4C232A51F1A6C97006B91DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4C232A31F1A6C97006B91DF /* LaunchScreen.storyboard */; };
-		E4DAA0191F1AEE6800E3B42B /* wine.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E4DAA0181F1AEE6700E3B42B /* wine.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E49EDAD31F1C65B200660970 /* wine.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = wine.mlmodel; sourceTree = "<group>"; };
 		E4C232971F1A6C97006B91DF /* winecoreml.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = winecoreml.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4C2329A1F1A6C97006B91DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4C2329C1F1A6C97006B91DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -23,7 +24,6 @@
 		E4C232A11F1A6C97006B91DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4C232A41F1A6C97006B91DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4C232A61F1A6C97006B91DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E4DAA0181F1AEE6700E3B42B /* wine.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = wine.mlmodel; path = ../../../python/coremlwinemodel/wine.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +56,8 @@
 		E4C232991F1A6C97006B91DF /* winecoreml */ = {
 			isa = PBXGroup;
 			children = (
+				E49EDAD31F1C65B200660970 /* wine.mlmodel */,
 				E4C2329A1F1A6C97006B91DF /* AppDelegate.swift */,
-				E4DAA0181F1AEE6700E3B42B /* wine.mlmodel */,
 				E4C2329C1F1A6C97006B91DF /* ViewController.swift */,
 				E4C2329E1F1A6C97006B91DF /* Main.storyboard */,
 				E4C232A11F1A6C97006B91DF /* Assets.xcassets */,
@@ -140,7 +140,7 @@
 			files = (
 				E4C2329D1F1A6C97006B91DF /* ViewController.swift in Sources */,
 				E4C2329B1F1A6C97006B91DF /* AppDelegate.swift in Sources */,
-				E4DAA0191F1AEE6800E3B42B /* wine.mlmodel in Sources */,
+				E49EDAD41F1C65B400660970 /* wine.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
