@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var magnesiumSlider: UISlider!
     @IBOutlet weak var totalPhenolsLabel: UILabel!
     @IBOutlet weak var totalPhenolsSlider: UISlider!
-    @IBOutlet weak var regionLabel: UILabel!
+    @IBOutlet weak var cultivarLabel: UILabel!
     
     let model = wine()
     let numberFormatter = NumberFormatter()
@@ -47,10 +47,9 @@ class ViewController: UIViewController {
     @IBAction func updateValues() {
         DispatchQueue.main.async {
             self.updateLabels();
-            self.predictRegion();
+            self.predictCultivar();
         }
     }
-    
     
     func updateLabels() {
         alcoholLabel.text = "Alcohol: \(numberFormatter.string(for: alcoholSlider.value) ?? "0")"
@@ -61,10 +60,9 @@ class ViewController: UIViewController {
         totalPhenolsLabel.text = "Total Phenols: \(numberFormatter.string(for: totalPhenolsSlider.value) ?? "0")"
     }
     
-    
-    func predictRegion() {
+    func predictCultivar() {
         if let prediction = try? model.prediction(alcohol: Double(alcoholSlider.value), malicAcid: Double(malicAcidSlider.value), ash: Double(ashSlider.value), alkalinityAsh: Double(alkalinityAshSlider.value), magnesium: Double(magnesiumSlider.value), totalPhenols: Double(totalPhenolsSlider.value)) {
-            regionLabel.text = "Region \(prediction.classLabel) (\(prediction.classProbability[prediction.classLabel] ?? 0))"
+            cultivarLabel.text = "Cultivar \(prediction.classLabel) (\(prediction.classProbability[prediction.classLabel] ?? 0))"
         }
     }
 }

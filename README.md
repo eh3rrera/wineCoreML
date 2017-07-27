@@ -1,7 +1,7 @@
 # wineCoreML
 iOS app that predicts the origin of a wine based on some of its chemical properties.
 
-It uses a CoreML model created from a scikit-learn model using a random forest algorithm with the default parameters. You can find the scripts in this [gist](https://gist.github.com/eh3rrera/cc32561e415bc570a236d32978a6d340).
+It uses a CoreML model created from a scikit-learn model using a random forest algorithm with the default parameters. You can find the scripts in this [gist](https://gist.github.com/eh3rrera/7552c319c0351cfda336a555e10f4f57).
 
 Follow the tutorial at the Pusher blog (not yet published).
 
